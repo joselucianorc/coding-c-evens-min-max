@@ -4,18 +4,31 @@
 //Tarefa 4: imprimir uma mensagem final notificando o total de números que foram impressos
 //Tarefa 5: imprimir uma segunda mensagem final de notificação, quando o mínimo ou o máximo não forem números pares
 
+//VERSÃO 2 MELHORADA DO PROGRAMA
+/*
+	a) Interação com o usuário referente a funcionalidade de entrada dos números
+	b) Mensagens finais impressas incorretamente em algumas situações
+	c) Não é necessário iterar de um por um e ainda perguntar a cada passo do laço
+	d) O uso do goto é admitido pela linguagem e justificável apenas em algumas situações
+	e) Melhorar a linha de instrução que incrementa o valor da variável
+	f) Reavaliar a necessidade da variável iContaImpressos
+	g) O uso do operador de módulo é mais lento por envolver divisão
+	h) Constantes brutas sendo atribuídas a variáveis não são uma boa prática. 
+	i) Tornar mais clara a intenção no usoCriar sinônimos para tipos
+*/
+
 #include <stdio.h>
 
 /* Início da funcao main */
 int main() { 
 
-	/* Imprime um título do programa */
-	printf("Primeiro programa\n\n");
-
 	int iNumInicial = 1; /* Pedimos a reserva de um pedaço da memória para armazenar um número inteiro, apelidando esse lugar de "iNumInicial" e gravamos nele o número 1 */
 	int iNumFinal = 12; /* Idem com o nome iNumFinal2 */
 	int iNumero;
 	int iContaImpressos = 0;
+
+	/* Imprime um título do programa */
+	printf("Primeiro programa\n\n");
 
 	printf("Lista dos numeros pares entre %d e %d\n", iNumInicial, iNumFinal );
 
